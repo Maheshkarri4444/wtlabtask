@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: steelblue;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #box:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Box</h1>
+    <div id="box">Click Me</div>
+    <script>
+        document.getElementById('box').addEventListener('click', function() {
+            alert('Box Clicked!');
+        });
+    </script>
+</body>
+</html>
